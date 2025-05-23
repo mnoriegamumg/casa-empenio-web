@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control de acceso</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 40px;
+    }
+
+    h1 {
+      color: #00B140;
+      font-size: 32px;
+    }
+
+    p {
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #00B140;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #009933;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Controla el acceso de tus empleados</h1>
+    <p>Crea cuentas para todos los empleados de tu sucursal, restringe su horario de acceso y sus permisos según su puesto.</p>
+
+    <form action="#" method="post">
+      <label for="nombre">Nombre del empleado</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej. Adolfo Benítez" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="Ej. abenitez@gmail.com" required>
+
+      <label for="puesto">Puesto</label>
+      <select id="puesto" name="puesto" required>
+        <option value="empleado">Empleado</option>
+        <option value="supervisor">Supervisor</option>
+        <option value="administrador">Administrador</option>
+      </select>
+
+      <button type="submit">Crear usuario</button>
+    </form>
+  </div>
+
+</body>
+</html>

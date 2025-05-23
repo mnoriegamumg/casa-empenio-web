@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuador de joyas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            color: #8bc34a; /* Verde claro similar al título */
+            margin-top: 0;
+        }
+
+        p {
+            color: #757575; /* Gris similar a la descripción */
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #212121; /* Gris oscuro para las etiquetas */
+            font-weight: bold;
+        }
+
+        select,
+        input[type="text"] {
+            width: calc(100% - 12px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        .output-group {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .output-group label {
+            margin-right: 10px;
+        }
+
+        .output-group input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #2196f3; /* Azul similar al resultado */
+        }
+
+        .output-group button {
+            background-color: #f44336; /* Rojo similar al botón */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .output-group button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Valuador de joyas</h1>
+        <p>Calcula automáticamente el valor de prendas de oro y plata, basado en el valor más actualizado del mercado de metales preciosos.</p>
+
+        <div class="form-group">
+            <label for="metal">Metal</label>
+            <select id="metal" name="metal">
+                <option value="oro">Oro</option>
+                <option value="plata">Plata</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="peso">Peso en gramos</label>
+            <input type="text" id="peso" name="peso" value="30">
+        </div>
+
+        <div class="form-group">
+            <label for="pureza">Pureza</label>
+            <input type="text" id="pureza" name="pureza" value="12">
+        </div>
+
+        <div class="form-group">
+            <label for="observaciones">Observaciones</label>
+            <textarea id="observaciones" name="observaciones">Gastado</textarea>
+        </div>
+
+        <div class="output-group">
+            <label for="avaluo">Avalúo</label>
+            <input type="text" id="avaluo" name="avaluo" value="10436.86" readonly>
+            <button type="button">📈</button>
+        </div>
+    </div>
+</body>
+</html>
