@@ -176,18 +176,11 @@
             </a>
         </div>
         
-        <button class="logout-btn" onclick="logout()">
+        <button class="logout-btn" (click)="logout()">
             <i class="fas fa-sign-out-alt"></i>
             <span>Cerrar Sesión</span>
         </button>
     </div>
 
-    <script>
-        function logout() {
-            // Aquí iría la lógica para cerrar sesión
-            alert('Sesión de Mayra Sontay cerrada correctamente');
-            window.location.href = '/auth';
-        }
-    </script>
 </body>
 </html>

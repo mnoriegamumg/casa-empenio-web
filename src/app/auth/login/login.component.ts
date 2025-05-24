@@ -23,4 +23,11 @@ export class LoginComponent {
       // Aquí iría la lógica de autenticación
     }
   }
+
+  login() {
+    console.log("errr");
+            // Aquí iría la lógica para cerrar sesión
+            alert('Sesión de Mayra Sontay Ingreso correctamente');
+            window.location.href = '/configurar-app';
+        }
 }

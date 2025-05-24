@@ -19,4 +19,11 @@ export class SidebarComponent {
       });
   }
 
+  logout() {
+    console.log("errr");
+            // Aquí iría la lógica para cerrar sesión
+            alert('Sesión de Mayra Sontay cerrada correctamente');
+            window.location.href = '/auth';
+        }
+
 }
